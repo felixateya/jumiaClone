@@ -10,33 +10,32 @@ body {
 .phones {
   display: flex;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   justify-content: center;
   padding-top: 10%;
+  flex-wrap: wrap;
 }
 #phoneOne,
 #phoneTwo,
 #phoneThree,
 #phoneFour {
-  width: 22%;
+  width: 300px;
   height: 100%;
   background-color: #fff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 8px;
-  box-shadow:10px 10px 20px 10px #999;
-cursor: pointer;
-
-  
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px 10px #999;
+  cursor: pointer;
 }
-
 
 #A23,
 #A33,
 #A54,
 #A74 {
-  width: 90%;
+  width: 100%;
   height: 75%;
 }
 
@@ -44,7 +43,7 @@ cursor: pointer;
 #name2,
 #name3,
 #name4 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 100;
   padding-left: 20px;
   color: #888;
@@ -68,4 +67,20 @@ cursor: pointer;
   font-size: 24px;
   padding-left: 20px;
   text-decoration: line-through;
+}
+
+
+@media screen and (max-width:1155px) {
+  .phones{
+    width: 100%;
+    height: max-content;
+  }
+
+  #phoneOne,
+#phoneTwo,
+#phoneThree,
+#phoneFour {
+  width: 300px;
+}
+
 }

@@ -46,6 +46,7 @@ if (selectedItem == PhoneOne.itemId) {
   document.getElementById("originalPrice").innerText = PhoneOne.originalPrice;
 
   var cost = PhoneOne.discountedPrice;
+  
   qty(cost);
 } else if (selectedItem == PhoneTwo.itemId) {
   document.getElementById("A23").src = PhoneTwo.image;
@@ -109,6 +110,10 @@ function userLocation(total) {
     } else if (delivery == "Muthaiga") {
       document.getElementById("total").innerText =
         "Total: KES " + (total + Muthaiga);
+    }
+    else if (delivery == " "){
+      document.getElementById("total").innerText =
+      "Total: KES " + total;
     }
   };
 }
